@@ -1,0 +1,1013 @@
+ CSS file
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: none;
+  /* background-image:url(/MTN-YoutubeBuffet-Web1\ \(2\).jpg);
+    background-image: cover; */
+  width: 100vw;
+  /* margin-bottom: 30px; */
+  animation: change 10s infinite ease ease-in-out;
+}
+header {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 0.96),
+    rgba(32, 32, 32, 0)
+  );
+}
+.offer {
+  display: flex;
+  font-size: 16px;
+  font-weight: 50px;
+  gap: 30px;
+}
+nav img {
+  width: 80px;
+}
+
+nav {
+  background-color: #ffcb05;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  padding: 20px;
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.lists {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px;
+}
+
+.lists ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 5px 30px;
+  list-style: none;
+  font-size: 20px;
+}
+
+/* .lists li{
+    position: relative;
+} */
+
+.drop {
+  position: relative;
+}
+.drop:hover .drop-menu {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+.drop-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  display: none;
+  background-color: white;
+  width: 100%;
+  text-decoration: none;
+  height: 400px;
+  background-image: url();
+  z-index: 999;
+}
+
+.drop-menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.drop-menu a:hover {
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.menucont {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.menuimg {
+  display: flex;
+  flex-direction: column;
+}
+
+.menucont img {
+  width: 350px;
+  border-radius: 50px;
+}
+.herotext {
+  position: relative;
+  height: 100%;
+  margin-top: 40px;
+  width: 100% !important;
+  right: 0;
+  left: 0;
+}
+
+/* Basic Swiper Container Styling */
+.mySwiper {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Flex Container */
+.swiper-flex {
+  display: flex;
+}
+
+/* Slide Styling */
+.swiper-slide {
+  background-color: #ffff;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 100vh;
+  width: 100%;
+  transition: transform 0.3s ease;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* Optional: Hover Effect */
+/* swiper-slide:hover {
+  transform: scale(1.05);/
+} */
+
+/* Pagination Styling */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 10% !important; /* Adjust positioning */
+  transform: translateX(-50%); /* adjust for centering */
+  z-index: 100;
+
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7); /* Bullet color */
+  opacity: 0.7; /* Bullet transparency */
+  position: relative;
+  margin: 0 5px;
+  left: 20%;
+  bottom: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background: white; /* Active bullet color */
+  opacity: 1; /* Full opacity for active bullet */
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.slide1 {
+  background-image: url(./banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px 100px;
+  overflow: hidden;
+  gap: 50px;
+}
+
+.slidera {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+}
+
+.sliderb {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+
+.sliderc {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+.sliderd {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+
+.slidera h2,
+.sliderb h2,
+.sliderd h2 {
+  font-size: 60px;
+  font-weight: 700px;
+  width: 600px;
+  padding-bottom: 45px;
+}
+.sliderc h2 {
+  font-size: 60px;
+  font-weight: 700px;
+  width: 600px;
+  padding: 45px 0;
+}
+.slidera p,
+.sliderb p,
+.sliderc p,
+.sliderd p {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.slide2 {
+  background-image: url(/MTN-YoutubeBuffet-Web1\ \(2\).jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150%;
+  display: flex;
+  align-items: center;
+  padding: 5px 100px;
+  gap: 50px;
+
+  overflow: hidden;
+}
+
+.slide3 {
+  background-image: url(/spelling.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 130%;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  color: white;
+  line-height: 5px;
+  overflow: hidden;
+}
+
+.slide4 {
+  background-image: url(/Youtube-website-.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150%;
+  display: flex;
+  align-items: center;
+  padding: 5px 100px;
+  overflow: hidden;
+}
+
+.button {
+  width: 92%;
+  position: absolute;
+  right: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  top: 350px;
+  text-align: center;
+  z-index: 996;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 15px;
+  margin-left: 50px;
+}
+button {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: inherit;
+}
+.symbols {
+  display: -webkit-inline-flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+  margin-left: 400px;
+  margin-top: 40px;
+  padding: 0 30px;
+}
+
+.symbols img {
+  width: 80px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ffcb05;
+  padding: 30px;
+}
+
+.device {
+  display: flex;
+  justify-content: center;
+  padding: 0 40px;
+  margin-top: 100px;
+  gap: 400px;
+  align-items: center;
+  margin-left: 500px;
+}
+
+.device h1 {
+  font-size: 80px;
+  font-weight: 300px;
+}
+
+.device a {
+  padding: 20px 45px;
+  border-radius: 35px;
+  text-decoration: none;
+  border: 1px black solid;
+  color: black;
+  font-size: 25px;
+}
+.device a:hover {
+  background-color: #ffcb05;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  height: 800px;
+  margin: 0 200px;
+  gap: 20px;
+
+  /* align-items: center; */
+}
+
+.half-one {
+  background-image: url(/5G_-promo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 350px;
+  align-items: flex-start;
+  padding: 35px;
+  color: white;
+  border-radius: 40px;
+}
+
+.half-one h2 p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2px;
+}
+.half-one h2 {
+  text-align: left;
+  font-weight: 800;
+  font-size: 60px;
+  width: 500px;
+}
+
+.half-one p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.secondhalf-one {
+  background-image: url(/BR-DESKTOP-Standard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 350px;
+  border-radius: 40px;
+  color: black;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  /* margin:0  40px; */
+}
+
+.half-two p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.half-two h2 {
+  font-weight: 800;
+  font-size: 40px;
+}
+.secondhalf-two {
+  background-image: url(/Fibrebroad_black_web\ \(2\).jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 330px;
+  border-radius: 40px;
+  color: white;
+  padding: 30px;
+  margin-top: 20px;
+  /* margin-right:5px; */
+}
+
+.price {
+  margin-top: 150px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow span {
+  font-size: 70px;
+  display: none;
+}
+.arrow span:hover {
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.half-two {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 700px;
+  height: 700px;
+  row-gap: 5px;
+  justify-content: right;
+}
+
+.arrows {
+  display: flex;
+  gap: 5px;
+}
+.arrows span {
+  font-size: 20px;
+}
+hr {
+  text-align: center;
+  width: 80%;
+}
+
+/* .secondhalf-one h2 p{
+
+  margin-left: 400px;
+} */
+.arrows img {
+  margin-top: 150px;
+}
+
+.line {
+  width: 85%;
+  background-color: black;
+  border: 0.5px rgb(136, 134, 134) solid;
+  margin-left: 130px;
+  margin-bottom: 30px;
+}
+.wedo {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin: 0 100px;
+  gap: 40px;
+  justify-content: baseline;
+}
+
+.lovedones {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.lovedones img {
+  width: 80px;
+}
+
+.lovedones h3 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 300px;
+  text-align: center;
+}
+
+.internet {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.internet img {
+  width: 80px;
+}
+
+.internet h3 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 300px;
+  text-align: center;
+}
+
+.productivity {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
+.productivity img {
+  width: 90px;
+}
+
+.productivity h3 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 300px;
+  text-align: center;
+}
+.internet p,
+.lovedones p,
+.productivity p {
+  font-size: 20px;
+}
+
+.placards {
+  background-image: url(/deal-zone-web.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 600px;
+  margin: 80px 150px;
+  border-radius: 40px;
+  position: absolute;
+}
+
+.cards {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  top: 380px;
+  left: 1 0px;
+}
+
+.placard {
+  width: 350px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.mySwipers {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  text-align: center;
+  font-size: 18px;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwipers {
+  width: 80%;
+  height: 50vh;
+}
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -80px) !important;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: left !important;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+
+
+
+html file
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+  </head>
+  <body>
+    <header>
+      <div class="use">
+        <ul>
+          <li>PERSONAL</li>
+        </ul>
+      </div>
+
+      <div class="offer">
+        <p>BUSINESS</p>
+        <p>PLAY</p>
+        <p>INVESTORS</p>
+        <p>FOUNDATIONS</p>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <img src="/mtn-logo (1).svg" alt="" />
+        <div class="lists">
+          <ul>
+            <div class="drop">
+              <li>Data</li>
+              <div class="drop-menu">
+                <div class="menucont">
+                  <div class="menuimg">
+                    <a href="">Mtn 5g</a>
+                    <a href="">Data Plans</a>
+                    <a href="">Data Gifting</a>
+                    <a href="">Apple Music</a>
+                    <a href="">Goodybag Social</a>
+                    <a href="">Router plans</a>
+                  </div>
+                  <img src="/MTN-5G-AD-PAGE-.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="drop">
+              <li>Devices</li>
+
+              <div class="drop-menu">
+                <div class="menucont">
+                  <div class="menuimg">
+                    <a href="#">Broadband</a>
+                    <a href="#">voLTE</a>
+                    <a href="#">Device Financing</a>
+                  </div>
+                  <img src="/MTN-5G-AD-PAGE-.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="drop">
+              <li>Voice</li>
+
+              <div class="drop-menu">
+                <div class="menucont">
+                  <div class="menuimg">
+                    <a href="#">Voice Plans</a>
+                    <a href="#">Roaming and Int'l calling</a>
+                  </div>
+                  <img src="/MTN-5G-AD-PAGE-.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="drop">
+              <li>Sim Services</li>
+
+              <div class="drop-menu">
+                <div class="menucont">
+                  <div class="menuimg">
+                    <a href="">eSIM</a>
+                    <a href="">Sim Swap</a>
+                    <a href="">Sim Registration Tips</a>
+                    <a href=""> Keep my Number</a>
+                  </div>
+                  <img src="/MTN-5G-AD-PAGE-.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="drop">
+              <li>Support</li>
+
+              <div class="drop-menu">
+                <div class="menucont">
+                  <div class="menuimg">
+                    <a href="">Find a Store</a>
+                    <a href="">Coverage Sector</a>
+                    <a href="">Help centre</a>
+                    <a href="">Internet Settings</a>
+                  </div>
+                  <img src="/MTN-5G-AD-PAGE-.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <li class="arrow">
+              Shop
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </li>
+          </ul>
+        </div>
+        <span class="material-symbols-outlined"> search </span>
+      </nav>
+
+      <div class="herotext">
+        <swiper-container class="mySwiper" pagination="true" autoplay="true">
+          <swiper-slide>
+            <div class="slide1">
+              <div class="slidera">
+                <h2>Download myMTN NG App and Enjoy up To 50GB FREE</h2>
+                <p> Get 50% Bonus on every recharge</p>
+                </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide2">
+              <div class = "sliderb">
+                <h2>Flexa With Apple</h2>
+                <p>stream over 100 million  movies experience ad free</p>
+              </div>
+              </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide3">
+              <div class = "sliderc">
+                <small>Mpulse</small>
+                <h2>Spelling Bee</h2>
+                <p>stand a chance to win up to #24 million nair</p>
+              </div>
+              </div>
+          </swiper-slide>
+
+
+          <swiper-slide>
+            <div class="slide4">
+              <div class = "sliderd">
+               <h2>Youtube Buffet Bundle</h2>
+                <p>stand a chance to win up to #24 million naira</p>
+              </div>
+              </div>
+          </swiper-slide>
+        </swiper-container>
+
+        <div class="button">
+          <button>Get Started</button>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      </div>
+
+      <script>
+        const swiper = new Swiper(".mySwiper", {
+          loop: true, // Enable looping
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true, // Make pagination bullets clickable
+          },
+          autoplay: {
+            delay: 9000, // Adjust the delay as needed
+            disableOnInteraction: false, // Autoplay won't be disabled after interactions
+          },
+        });
+      </script>
+
+
+      <div class="symbols">
+        
+        <div class="services">
+          <img src="/verified.svg" alt="">
+          <h5>Link your NIN</h5>
+         </div>
+
+         <div class="services">
+          <img src="/wifi_FILL0_wght300_GRAD0_opsz48.svg" alt="">
+          <h5>Broadband</h5>
+          </div>
+
+          <div class="services">
+            <img src="/5g_mobiledata_badge_FILL0_wght300_GRAD0_opsz48.svg" alt="">
+            <h5>Buy data</h5>
+            </div>
+        
+          <div class="services">
+              <img src="/devices_FILL0_wght300_GRAD0_opsz48.svg" alt="">
+              <h5>Devices</h5>
+              </div>
+
+        <div class="services">
+          <img src="app_promo_FILL0_wght300_GRAD0_opsz48.svg" alt="">
+          <h5>myMTN NG App </h5>
+          
+        </div>
+
+        <div class="services">
+          <img src="/shopping_bag_FILL0_wght300_GRAD0_opsz48.svg" alt="">
+          <h5>Shop</h5>
+
+        </div>
+        
+        </div>
+
+
+        <div class="device">
+          <h1>Devices</h1>
+        <a href="">All Devices</a>
+          </div>
+
+          <div class="container">
+            <div class="half-one">
+            <div class="half-two"><h2>5G Broadband Router</h2></div>
+            <div><p>COMES WITH FREE 100GB</p>
+            <h2>N80000</h2>
+            <div class="arrow"><p>Price</p><span class="material-symbols-outlined">
+            arrow_right_alt</span></div></div>
+            
+            </div>
+
+          <div class="half-two">
+        <div class = "secondhalf-one">
+        <div class><p>DEALS</p>
+        <h2>4G Broadband Router (Standard)</h2></div>
+
+        <div class="halftext"><p>COMES WITH FREE 50GB</p>
+        <h2>N20000</h2>
+          <div class="arrow"><p>Price</p> <span class="material-symbols-outlined">
+arrow_right_alt
+</span></div>
+</div>
+
+
+        </div>
+        <div class="secondhalf-two">
+          <h6>DEVICES</h6>
+          <h2>Fibre Broadband</h2>
+         <div class="arrows"> <p class="price">Price</p><img src="/arrow_right_alt_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+        </div>
+
+          </div>
+
+          </div>
+
+        
+      <div class="line"></div>
+
+      <div class="wedo">
+        <div class="lovedones">
+          <img src="/love.svg" alt="">
+          <h3>Connect with Loved Ones</h3>
+          <p>Discover affordable voice and data plans tailored for seamless communication with loved one</p>
+        </div>
+
+        <div class="internet">
+          <img src="/Internet.svg" alt="">
+          <h3>Explore the Digital World</h3>
+          <p>Unlock endless possibilities with our high-speed data plans and robust network coverage</p>
+        </div>
+
+        <div class="productivity">
+          <img src="/show_chart_FILL0_wght200_GRAD0_opsz24-1.svg" alt="">
+          <h3>Stay Productive on the Go</h3>
+          <p>Leverage innovative solutions designed to boost productivity for professionals and businesses</p>
+        </div>
+
+      </div>
+
+      <div class="placards">
+       <div class="cards">
+       
+       <swiper-container class="mySwipers" space-between="30" slides-per-view="3" pagination="true"
+    pagination-clickable="true" navigation="true">
+
+       <swiper-slide class="swiper"><div class="placard">
+        <h4>Roaming</h4>
+        <p>Find out more</p>
+       </div></swiper-slide>
+
+       
+       
+       <swiper-slide class="swiper"><div class="placard">
+        <h4>Device Financing</h4>
+        <p>Find out more</p>
+       </div></swiper-slide>
+
+
+       <swiper-slide class="swiper"><div class="placard">
+        <h4>4G LTE</h4>
+        <p>Find out more</p>
+       </div>
+        </swiper-slide>
+      
+        <swiper-slide class="swiper"><div class="placard">
+        <h4>4G LTE</h4>
+        <p>Find out more</p>
+       </div></swiper-slide>
+
+       
+       <swiper-slide class="swiper"><div class="placard">
+        <h4>MTN PULSE</h4>
+        <p>Find out more</p>
+       </div>
+      </swiper-slide>
+
+      <swipe-slider class="swiper">
+       <div class="placard">
+        <h4>NIN</h4>
+        <p>Find out more</p>
+       </div>
+       </swiper-slide>
+
+       <span part="bullet-active" class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+      </swiper-container>
+      
+
+      
+
+      </div>
+      </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </main>
+  </body>
+</html>
